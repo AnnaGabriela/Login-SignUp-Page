@@ -1,1 +1,1 @@
-Alguns templates pra se inspirar.
+Alguns templates pra se inspirar e alguns feitos por mim.
