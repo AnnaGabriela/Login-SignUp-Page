@@ -1,3 +1,10 @@
+<!--
+
+	DEVELOPER: ANNA GABRIELA CARVALHO
+	23/02/2017
+
+-->
+
 <!DOCTYPE html>
 
 <html>
@@ -7,7 +14,7 @@
 	<meta name="description" content="Leet | FrontEnd Internship Test">
 	<meta name="keywords" content="html, css, frontend, responsive">
 
-	<title>Log In | Sign Up</title>
+	<title>Log In | Sign Up Page</title>
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 </head>
@@ -17,31 +24,43 @@
 			<input name="tabs" type="radio" class="tab" id="tab-login" checked>
 			<section>
 				<h1>
-					 <label for="tab-login">LOGIN</label>
+					<label for="tab-login">LOGIN</label>
 				</h1>
 				<div>
 					<i class="fa fa-envelope-o" aria-hidden="true">
-					<input type="email" name="email" placeholder="Email"></i><br>
-					<i class="fa fa-lock" aria-hidden="true">
-					<input type="password" name="password" placeholder="Password"></i><br><br>
-					<a href="#">Forgot your password?</a>
+						<input type="email" name="email" placeholder="Email"></i><br>
+						<i class="fa fa-lock" aria-hidden="true">
+							<input type="password" name="password" placeholder="Password"></i><br><br>
+							<a href="#">Forgot your password?</a><br><br>
+							<button>LOGIN</button>
+							<p class="social-icons">Connect with:
+								<img src="img/fb.png">
+								<img src="img/twitter.png">
+								<img src="img/gplus.png">
+							</p>
+						</div>
+					</section>
+					<input name="tabs" type="radio" class="tab" id="tab-signup">
+					<section>
+						<h1>
+							<label for="tab-signup">SIGN UP</label>
+						</h1>
+						<div>
+							<input type="text" name="name" placeholder="Name"><br>
+							<input type="text" name="last-name" placeholder="Last Name"><br>
+							<input type="email" name="email" placeholder="Email"><br>
+							<input type="password" name="password" placeholder="Password"><br>
+							<input type="password" name="check-password" placeholder="Confirm Password"><br><br>
+							<button>SIGN UP</button>
+							<p class="social-icons">Connect with:
+								<img src="img/fb.png">
+								<img src="img/twitter.png">
+								<img src="img/gplus.png">
+							</p>
+						</div>
+					</section>
 				</div>
-			</section>
-			<input name="tabs" type="radio" class="tab" id="tab-signup">
-			<section>
-				<h1>
-					<label for="tab-signup">SIGN UP</label>
-				</h1>
-				<div>
-					<input type="text" name="name" placeholder="Name"><br>
-					<input type="text" name="last-name" placeholder="Last Name"><br>
-					<input type="email" name="email" placeholder="Email"><br>
-					<input type="password" name="password" placeholder="Password"><br>
-					<input type="password" name="check-password" placeholder="Confirm Password">
-				</div>
-			</section>
-		</div>
-	</main>
+			</main>
 
-</body>
-</html>
+		</body>
+		</html>
