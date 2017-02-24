@@ -28,7 +28,11 @@ a  {font-size: 14px;}
 main {
 	width: 100%;
 	height: 100vh;
-	background-image: url('../img/bg.png');
+	background: url(../img/bg.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	display: flex;
 	align-items: center;
 }
@@ -45,11 +49,11 @@ main {
 	display: none;
 }
 
-.tabs  > input:not(:checked) + section > div {
+.tabs  > input:not(:checked) + section > form {
 	display: none;
 }
 
-.tabs > section > div {
+.tabs > section > form {
 	position : relative;
 	z-index: 1;
 	float: right;
@@ -59,9 +63,10 @@ main {
 	border-bottom: 15px solid #b6482f;
 	background    : #fff;
 	padding: 40px 0 0 0;
+	box-shadow: 10px 10px 5px #888888;
 }
 
-.tabs  > input:checked + section > div {
+.tabs  > input:checked + section > form {
 	display: inline;
 	position: relative;
 	z-index: 2;
@@ -85,6 +90,7 @@ main {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	-webkit-user-select: none;
+	box-shadow: 10px 10px 5px #888888;
 }
 
 .tabs  > input:not(:checked) + section > h1 {
@@ -100,6 +106,10 @@ main {
 }
 
 /* FORM STYLE */
+form {
+	padding: 25px;
+}
+
 i {
 	color: black;
 }
@@ -115,6 +125,7 @@ input {
 	padding-bottom: 5px;
 	font-weight: 200;
 }
+
 
 /* BUTTON */ 
 button {
@@ -132,6 +143,7 @@ button:hover {
 	-webkit-transition: background-color 0.5s;
 	transition: background-color 0.5s;
 }
+
 
 /* 'CONNECT WITH' AREA */
 .social-icons img {
