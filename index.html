@@ -1,7 +1,6 @@
 <!--
 
 	DEVELOPER: ANNA GABRIELA CARVALHO
-	23/02/2017
 
 -->
 
@@ -16,51 +15,69 @@
 
 	<title>Log In | Sign Up Page</title>
 	<link href="styles/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
 	<main>
 		<div class="tabs">
+
+			<!--*************** LOGIN TAB *************** -->
 			<input name="tabs" type="radio" class="tab" id="tab-login" checked>
 			<section>
 				<h1>
 					<label for="tab-login">LOGIN</label>
 				</h1>
 				<form>
+					<h1>LOGIN</h1>
+					<br>
 					<i class="fa fa-envelope-o" aria-hidden="true">
-						<input type="email" name="email" placeholder="Email"></i><br>
-						<i class="fa fa-lock" aria-hidden="true">
-							<input type="password" name="password" placeholder="Password"></i><br><br>
-							<a href="#">Forgot your password?</a><br><br>
-							<button>LOGIN</button>
-							<p class="social-icons">Connect with:
-								<img src="img/fb.png">
-								<img src="img/twitter.png">
-								<img src="img/gplus.png">
-							</p>
-						</form>
-					</section>
-					<input name="tabs" type="radio" class="tab" id="tab-signup">
-					<section>
-						<h1>
-							<label for="tab-signup">SIGN UP</label>
-						</h1>
-						<form>
-							<input type="text" name="name" placeholder="Name"><br>
-							<input type="text" name="last-name" placeholder="Last Name"><br>
-							<input type="email" name="email" placeholder="Email"><br>
-							<input type="password" name="password" placeholder="Password"><br>
-							<input type="password" name="check-password" placeholder="Confirm Password"><br><br>
-							<button>SIGN UP</button>
-							<p class="social-icons">Connect with:
-								<img src="img/fb.png">
-								<img src="img/twitter.png">
-								<img src="img/gplus.png">
-							</p>
-						</form>
-					</section>
-				</div>
-			</main>
+						<input type="email" name="email" placeholder="Email" required>
+					</i><br>
+					<i class="fa fa-lock" aria-hidden="true">
+						<input type="password" name="password" placeholder="Password" required>
+					</i><br><br>
+					<a href="#">Forgot your password?</a><br><br>
+					<button>ENTER</button><br><br>
+					<p class="social-icons">Connect with: 
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+					</p>
+				</form>
+			</section>
 
-		</body>
-		</html>
+			<!--*************** SIGN UP TAB *************** -->
+			<input name="tabs" type="radio" class="tab" id="tab-signup">
+			<section>
+				<h1>
+					<label for="tab-signup">SIGN UP</label>
+				</h1>
+				<form>
+					<h1>SIGN UP</h1>
+					<i class="fa fa-user-o" aria-hidden="true">
+						<input type="text" name="name" placeholder="Name" required>
+					</i><br>
+					<i class="fa fa-user" aria-hidden="true">
+						<input type="text" name="last-name" placeholder="Last Name" required>
+					</i><br>
+					<i class="fa fa-envelope-o" aria-hidden="true">
+						<input type="email" name="email" placeholder="Email" required>
+					</i><br>
+					<i class="fa fa-lock" aria-hidden="true">
+						<input type="password" name="password" placeholder="Password" required>
+					</i><br>
+					<i class="fa fa-lock" aria-hidden="true">
+						<input type="password" name="check-password" placeholder="Confirm Password" required>
+					</i><br><br>
+					<button>ENTER</button>
+					<p class="social-icons">Connect with: 
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+					</p>
+				</form>
+			</section>
+		</div>
+	</main>
+
+</body>
+</html>

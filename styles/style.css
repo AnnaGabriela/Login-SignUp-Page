@@ -1,9 +1,10 @@
 /*
 
 DEVELOPER: ANNA GABRIELA CARVALHO
-23/02/2017
 
----------------------------------
+*/
+
+/*
 
 		COLOR PALETTE
 
@@ -13,13 +14,12 @@ ORANGE				#ffaf53
 LIGHT-RED			#b6482f
 DARK-RED 			#8e270e
 
----------------------------------
 
 */
 
 @import url('normalize.css');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:200');
-
 
 * {font-family: 'Work Sans', sans-serif;}
 
@@ -39,31 +39,25 @@ main {
 
 /* TABS */
 .tabs {
-	width: 30%;
 	margin: auto;
-	padding: 20px;
 	text-align: center;
 }
 
-.tabs > input {
-	display: none;
-}
+.tabs > input {display: none;}
 
-.tabs  > input:not(:checked) + section > form {
-	display: none;
-}
+.tabs  > input:not(:checked) + section > form {display: none;}
 
 .tabs > section > form {
 	position : relative;
 	z-index: 1;
 	float: right;
-	width         : 100%;
-	margin        : 3.5em 0 0 -100%;
+	width: 100%;
+	margin: 4em 0 0 -100%;
 	border-radius: 15px;
-	border-bottom: 15px solid #b6482f;
-	background    : #fff;
-	padding: 40px 0 0 0;
-	box-shadow: 10px 10px 5px #888888;
+	border-bottom: 15px solid #ffaf53;
+	background: #fff;
+	padding: 40px 20px 0 20px;
+	box-shadow: 5px 5px 5px #888888;
 }
 
 .tabs  > input:checked + section > form {
@@ -74,7 +68,8 @@ main {
 
 .tabs  > input:checked + section > h1{
 	background-color: white;
-	color: #b6482f;
+	color: #ffaf53;
+	border: 2px solid #ffaf53;
 }
 
 .tabs > section > h1,
@@ -82,37 +77,30 @@ main {
 	float: left;
 	font-size: 20px;
 	font-weight: 300;
-	padding: 10px 17.3% 22px 17.3% ;
-	border-bottom: none;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+	margin: 8px;
+	padding: 10px 11% 10px 11%;
+	border: 2px solid #ffaf53;
 	cursor: pointer;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	-webkit-user-select: none;
-	box-shadow: 10px 10px 5px #888888;
 }
 
 .tabs  > input:not(:checked) + section > h1 {
-	background-color: #b6482f;
-	color:white;
+	background-color: #ffaf53;
+	color: white;
 }
 
 .tabs > input:not(:checked) + section > h1:hover {
 	background-color: white;
-	color:#b6482f;
-	-webkit-transition: background-color 0.5s;
-	transition: background-color 0.5s;
+	color:#ffaf53;
+	-webkit-transition: background-color 0.8s;
+	transition: background-color 0.8s;
 }
 
 /* FORM STYLE */
-form {
-	padding: 25px;
-}
+form {padding: 10%;}
 
-i {
-	color: black;
-}
+form input {outline: none;}
+
+i {color: black;}
 
 input {
 	border: none;
@@ -126,28 +114,35 @@ input {
 	font-weight: 200;
 }
 
-
 /* BUTTON */ 
 button {
 	margin: 5px 0 15px 0;
 	padding: 10px;
 	width: 50%;
 	background-color: white;
-	border: 2px solid #b6482f;
-	color: #b6482f;
+	border: 2px solid #ffaf53;
+	color: #ffaf53;
 }
 
 button:hover {
-	background-color: #b6482f;	
+	background-color: #ffaf53;	
 	color: white;
-	-webkit-transition: background-color 0.5s;
-	transition: background-color 0.5s;
+	-webkit-transition: background-color 0.8s;
+	transition: background-color 0.8s;
+	cursor: pointer;
 }
 
 
 /* 'CONNECT WITH' AREA */
-.social-icons img {
-	width: 25px;
-	display: inline-block;
-	padding: 0 2px;
+.social-icons i {
+	padding: 5px;
+	color: #ffaf53;
+	opacity: .6;
+	font-size: 1.3em;
+}
+
+.social-icons i:hover {
+	opacity: 1;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
 }
