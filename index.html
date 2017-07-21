@@ -1,83 +1,80 @@
-<!--
-
-	DEVELOPER: ANNA GABRIELA CARVALHO
-
--->
-
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewports" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Leet | FrontEnd Internship Test">
-	<meta name="keywords" content="html, css, frontend, responsive">
+    <meta charset="UTF-8">
+    <meta name="viewports" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Leet | FrontEnd Internship Test">
+    <meta name="keywords" content="html, css, frontend, responsive">
 
-	<title>Log In | Sign Up Page</title>
-	<link href="styles/style.css" rel="stylesheet">
+    <title>Log In | Sign Up Page</title>
+    <link rel="stylesheet/less" type="text/css" href="styles/style.less" />
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-	<main>
-		<div class="tabs">
+    <main class="container-fluid row">
+        <div class="col-sm-4"></div>
+        <section class="col-sm-4 signInUpTabs">
 
-			<!--*************** LOGIN TAB *************** -->
-			<input name="tabs" type="radio" class="tab" id="tab-login" checked>
-			<section>
-				<h1>
-					<label for="tab-login">LOGIN</label>
-				</h1>
-				<form>
-					<h1>LOGIN</h1>
-					<br>
-					<i class="fa fa-envelope-o" aria-hidden="true">
-						<input type="email" name="email" placeholder="Email" required>
-					</i><br>
-					<i class="fa fa-lock" aria-hidden="true">
-						<input type="password" name="password" placeholder="Password" required>
-					</i><br><br>
-					<a href="#">Forgot your password?</a><br><br>
-					<button>ENTER</button><br><br>
-					<p class="social-icons">Connect with: 
-						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-					</p>
-				</form>
-			</section>
+            <!--Nav Tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#signIn" role="tab" aria-controls="signIn" data-toggle="tab">
+                    SIGN IN
+                </a>
+                </li>
+                <li role="presentation">
+                    <a href="#signUp" role="tab" aria-controls="signUp" data-toggle="tab">
+                    SIGN UP
+                </a>
+                </li>
+            </ul>
 
-			<!--*************** SIGN UP TAB *************** -->
-			<input name="tabs" type="radio" class="tab" id="tab-signup">
-			<section>
-				<h1>
-					<label for="tab-signup">SIGN UP</label>
-				</h1>
-				<form>
-					<h1>SIGN UP</h1>
-					<i class="fa fa-user-o" aria-hidden="true">
-						<input type="text" name="name" placeholder="Name" required>
-					</i><br>
-					<i class="fa fa-user" aria-hidden="true">
-						<input type="text" name="last-name" placeholder="Last Name" required>
-					</i><br>
-					<i class="fa fa-envelope-o" aria-hidden="true">
-						<input type="email" name="email" placeholder="Email" required>
-					</i><br>
-					<i class="fa fa-lock" aria-hidden="true">
-						<input type="password" name="password" placeholder="Password" required>
-					</i><br>
-					<i class="fa fa-lock" aria-hidden="true">
-						<input type="password" name="check-password" placeholder="Confirm Password" required>
-					</i><br><br>
-					<button>ENTER</button>
-					<p class="social-icons">Connect with: 
-						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-					</p>
-				</form>
-			</section>
-		</div>
-	</main>
-
+            <!--Tabs Content -->
+            <div class="tab-content">
+                <!-- SIGN IN TAB -->
+                <div role="tabpanel" class="tab-pane active" id="signIn">
+                    <form role="form">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required aria-required>
+                        <br>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" required aria-required>
+                        <br>
+                        <a href="#">Forgot your password?</a><br>
+                        <button>SIGN IN</button><br>
+                    </form>
+                </div>
+                <!-- SIGN UP TAB -->
+                <div role="tabpanel" class="tab-pane" id="signUp">
+                    <form role="form">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" required aria-required>
+                        <br>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" required aria-required>
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required aria-required>
+                        <br>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" required aria-required>
+                        <br>
+                        <label for="checkPassword">Confirm Password:</label>
+                        <input type="password" name="checkPassword" id="checkPassword" required aria-required>
+                        <br>
+                        <button>SIGN UP</button><br>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="col-sm-4"></div>
+    </main>
+    <script src="node_modules/less/dist/less.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
