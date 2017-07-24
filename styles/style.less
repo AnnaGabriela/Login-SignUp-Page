@@ -1,62 +1,96 @@
-/* COLOR PALETTE */
-@green: #458969;
-@light-yellow: #ffefae;
-@orange: #ffaf53;
-@light-red: #b6482f;
-@dark-red: #8e270e;
-
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:200');
 
+@main-color: #ffaf53;
 @main-font: 'Work Sans', sans-serif;
-@main-font-size: 14px;
+@main-font-size: 1em;
+.centralize() {
+    display: block;
+    margin: 0 auto;    
+}
 
-a  {font-size: @main-font-size;}
+a {
+    font-size: @main-font-size;
+    text-align: center;
+    color: white;
+    .centralize();
+}
+
+h1 {text-align: center; padding: 20px;}
+
+body {
+    background: url(../img/bg.png) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
 
 main {
-	width: 100%;
-	height: 100vh;
-	background: url(../img/bg.png) no-repeat center center fixed;
-    background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-	display: flex;
-	align-items: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
     font-family: @main-font;
+    display: flex;
+    padding: 5%;
 }
 
 .tab-content {
     background-color: white;
+    border-bottom: 10px solid @main-color;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.signInUpTabs {
-    width: 25em;
-    display: inline-block;
-    margin: 0 auto;
+.sign-in-up-tabs {
+    width: 30em;
+    .centralize();
+}
+
+/* TABS FORM */
+.nav-tabs li {
+    width: 50%;
+    &:not(active) {
+        background-color: @main-color;
+    }
+    & a:not(active):hover {
+        background-color: transparent;
+        border: none;
+        color: white;
+    }
 }
 
 /* FORM */
-form {padding: 20%;}
-
-input {
-	border: none;
-	border-bottom: 1px solid black;
-    outline-color: white;
+form {
+    width: 100%;
+    padding: 10% 25%;
 }
 
-/* BUTTON */ 
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    outline-color: white;
+    .centralize();
+}
+
+#forgot-password {
+    color: black;
+    text-decoration-color: white;
+}
+
+/* BUTTON */
 button {
-	padding: 10px;
-	width: 50%;
-	background-color: white;
-	border: 1px solid @orange;
-	color: @orange;
-    
+    padding: 10px;
+    width: 50%;
+    background-color: white;
+    border: 1px solid @main-color;
+    color: @main-color;
+    .centralize();
     &:hover {
-        background-color: @orange;	
+        background-color: @main-color;
         color: white;
-        transition: background-color 0.8s;
-            -webkit-transition: background-color 0.8s;
+        transition: background-color 0.5s;
+        -webkit-transition: background-color 0.5s;
         cursor: pointer;
     }
 }
