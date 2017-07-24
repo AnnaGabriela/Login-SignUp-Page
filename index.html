@@ -9,14 +9,14 @@
     <meta name="keywords" content="html, css, frontend, responsive">
 
     <title>Log In | Sign Up Page</title>
-    <link href="styles/style.css" rel="stylesheet">
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet/less" type="text/css" href="styles/style.less" />
+ 
 </head>
 
 <body>
     <main class="container-fluid row">
-        <div class="col-sm-4"></div>
-        <section class="col-sm-4 signInUpTabs">
+        <section class="signInUpTabs">
 
             <!--Nav Tabs -->
             <ul class="nav nav-tabs" role="tablist">
@@ -37,10 +37,10 @@
                 <!-- SIGN IN TAB -->
                 <div role="tabpanel" class="tab-pane active" id="signIn">
                     <form role="form">
-                        <label for="email">Email:</label>
+                        <label for="email">Email:</label><br>
                         <input type="email" name="email" id="email" required aria-required>
                         <br>
-                        <label for="password">Password:</label>
+                        <label for="password">Password:</label><br>
                         <input type="password" name="password" id="password" required aria-required>
                         <br>
                         <a href="#">Forgot your password?</a><br>
@@ -50,19 +50,19 @@
                 <!-- SIGN UP TAB -->
                 <div role="tabpanel" class="tab-pane" id="signUp">
                     <form role="form">
-                        <label for="name">Name:</label>
+                        <label for="name">Name:</label><br>
                         <input type="text" name="name" id="name" required aria-required>
                         <br>
-                        <label for="lastName">Last Name:</label>
+                        <label for="lastName">Last Name:</label><br>
                         <input type="text" name="lastName" id="lastName" required aria-required>
                         <br>
-                        <label for="email">Email:</label>
+                        <label for="email">Email:</label><br>
                         <input type="email" name="email" id="email" required aria-required>
                         <br>
-                        <label for="password">Password:</label>
+                        <label for="password">Password:</label><br>
                         <input type="password" name="password" id="password" required aria-required>
                         <br>
-                        <label for="checkPassword">Confirm Password:</label>
+                        <label for="checkPassword">Confirm Password:</label><br>
                         <input type="password" name="checkPassword" id="checkPassword" required aria-required>
                         <br>
                         <button>SIGN UP</button><br>
@@ -70,7 +70,6 @@
                 </div>
             </div>
         </section>
-        <div class="col-sm-4"></div>
     </main>
     <script src="node_modules/less/dist/less.min.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
