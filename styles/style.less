@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:200');
 
-@main-color: #ffaf53;
+@main-color: #8e270e;
 @main-font: 'Work Sans', sans-serif;
 @main-font-size: 1em;
 .centralize() {
@@ -15,7 +15,10 @@ a {
     .centralize();
 }
 
-h1 {text-align: center; padding: 20px;}
+h1 {
+    text-align: center;
+    padding: 20px;
+}
 
 body {
     background: url(../img/bg.png) no-repeat center center fixed;
@@ -62,7 +65,7 @@ main {
 /* FORM */
 form {
     width: 100%;
-    padding: 10% 25%;
+    padding: 10% 25% 0 25%;
 }
 
 input {
@@ -94,3 +97,22 @@ button {
         cursor: pointer;
     }
 }
+
+/* CONNECT WITH */
+span {
+    padding: 5%;
+    .centralize();
+    text-align: center;
+    p, a {
+        display: inline;
+    }
+}
+
+.fa {
+    font-size: @main-font-size + .7;
+    padding: 3px;
+}
+
+.fa-facebook-square{color: darkblue;}
+.fa-google-plus-square{color: indianred;}
+.fa-twitter-square{color: deepskyblue;}

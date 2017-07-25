@@ -6,19 +6,20 @@
     <meta charset="UTF-8">
     <meta name="viewports" content="width=device-width, initial-scale=1">
     <meta name="description" content="Leet | FrontEnd Internship Test">
-    <meta name="keywords" content="html, css, frontend, responsive">
+    <meta name="keywords" content="html, css, frontend, responsive, less, signup, signin">
 
     <title>Log In | Sign Up Page</title>
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet/less" type="text/css" href="styles/style.less" />
- 
+
 </head>
 
 <body>
     <main>
         <section class="sign-in-up-tabs">
 
-            <!--Nav Tabs -->
+            <!-- Nav Tabs -->
             <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active">
                     <a href="#sign-in" role="tab" aria-controls="sign-in" data-toggle="tab">
@@ -32,43 +33,55 @@
                 </li>
             </ul>
 
-            <!--Tabs Content -->
+            <!-- Tabs Content -->
             <div class="tab-content">
                 <!-- SIGN IN TAB -->
                 <div role="tabpanel" class="tab-pane active" id="sign-in">
                     <form role="form">
                         <h1>SIGN IN</h1>
                         <label for="email">Email:</label><br>
-                        <input type="email" name="email" id="email" required aria-required>
+                        <input type="email" name="email" id="email" required>
                         <br>
                         <label for="password">Password:</label><br>
-                        <input type="password" name="password" id="password" required aria-required>
+                        <input type="password" name="password" id="password" required>
                         <br>
                         <a href="#" id="forgot-password">Forgot your password?</a><br>
                         <button>SIGN IN</button><br>
                     </form>
+                    <span>
+                        <p>Connect with:</p>
+                        <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>        
+                    </span>
                 </div>
                 <!-- SIGN UP TAB -->
                 <div role="tabpanel" class="tab-pane" id="sign-up">
                     <form role="form">
                         <h1>SIGN UP</h1>
                         <label for="name">Name:</label><br>
-                        <input type="text" name="name" id="name" required aria-required>
+                        <input type="text" name="name" id="name" required>
                         <br>
                         <label for="lastName">Last Name:</label><br>
-                        <input type="text" name="lastName" id="lastName" required aria-required>
+                        <input type="text" name="last-name" id="lastName" required>
                         <br>
                         <label for="email">Email:</label><br>
-                        <input type="email" name="email" id="email" required aria-required>
+                        <input type="email" name="email" id="email" required>
                         <br>
                         <label for="password">Password:</label><br>
-                        <input type="password" name="password" id="password" required aria-required>
+                        <input type="password" name="password" id="password" required>
                         <br>
                         <label for="checkPassword">Confirm Password:</label><br>
-                        <input type="password" name="check-password" id="check-password" required aria-required>
+                        <input type="password" name="check-password" id="check-password" required>
                         <br>
                         <button>SIGN UP</button><br>
                     </form>
+                    <span>
+                        <p>Connect with:</p>
+                        <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>        
+                    </span>
                 </div>
             </div>
         </section>
